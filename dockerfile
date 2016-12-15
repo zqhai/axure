@@ -3,4 +3,4 @@ MAINTAINER hai
 
 COPY . /usr/share/nginx/www
 
-ENTRYPOINT /etc/init.d/nginx start -D
+ENTRYPOINT /etc/init.d/nginx start && /usr/sbin/sshd -D
